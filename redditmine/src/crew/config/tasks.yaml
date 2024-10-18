@@ -1,0 +1,32 @@
+subreddit_analysis_task:
+  description: >
+    Analyze the subreddit data for {subreddit} using the SubredditDetailTool. 
+    Focus on identifying:
+    1. Commonly asked questions within the community
+    2. Recurring pain points or issues discussed by users
+    3. Broader topics and themes that frequently appear
+    4. Common patterns in user behavior, post types, or interactions
+    5. Emerging trends or shifts in community interests
+    Consider the context that the current year is 2024 when interpreting the data.
+    Pay special attention to highly upvoted posts and comments, as well as 
+    frequently occurring keywords or phrases.
+  expected_output: >
+    A comprehensive analysis report containing:
+    1. A summary of the subreddit's overall characteristics (subscriber count, activity level, etc.)
+    2. A list of the top 5 most commonly asked questions in the subreddit
+    3. A list of the top 5 recurring pain points or issues discussed by users
+    4. An overview of 3-5 broader topics or themes that dominate discussions
+    5. Description of 3-5 common patterns observed in user behavior or post types
+    6. Identification of 2-3 emerging trends or shifts in community interests
+    7. A brief analysis of the subreddit's sentiment towards the main topic
+    8. Any notable observations about user engagement patterns (e.g., types of posts that get the most comments or upvotes)
+    9. A list of 5-10 key keywords or phrases that frequently appear in discussions
+    10. Recommendations for further areas of investigation based on the analysis
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledge reports with the mains topics, each with a full section of information.
+    Formated as markdown with out '```'
